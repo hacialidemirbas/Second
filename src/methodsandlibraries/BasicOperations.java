@@ -3,7 +3,9 @@ package methodsandlibraries;
 public class BasicOperations {
     public static int addTwo(int a, int b){
         int c=a+b;
+        System.out.println(c);
         return c;
+
     }
     public static int subsTwo(int a, int b){
         int c=a-b;
