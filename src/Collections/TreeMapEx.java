@@ -1,5 +1,6 @@
 package Collections;
 
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeMap;
@@ -25,5 +26,16 @@ public class TreeMapEx {
         }
         System.out.println(marks.get("Vahit"));
         System.out.println(marks.values());
+        TreeMap<String,Integer> pairs= new TreeMap<>(Collections.reverseOrder());
+        pairs.put("Vahit",100);
+        pairs.put("Shohrat",100);
+        pairs.put("Rumeysa",100);
+        pairs.put("Melih",100);
+        pairs.put("Ali",100);
+        iter=pairs.keySet().iterator();
+        while(iter.hasNext()){
+            System.out.println(iter.next());
+        }
+
     }
 }
